@@ -1,2 +1,5 @@
 # Employee_Attrition_Prediction
-Build Logistic Regression model to classify whether employee stay or leave
+
+The dataset contains contains 14999 entries with no NA. There are 10 columns holding float, interger and object value type. Catergorical variables of “left”, “work_accident”, “promotion_last_5years” were encoded as numeric. Salary is populated binned as categorical of “low – medium – high”. It is important to note that only 24% of the data represents employees who left, and the imbalance dataset might have an impact on the accuracy of the predictive model. However, solution to this issue will bot be discussed in this report, the focus of this project is to build robust model from feature engineering.
+
+Applying Logistic Regression model, we yield an accuracy score of 0.79 on base model. Section 3 focuses on the feature engineering process, where we construct 24 new features and improve the accuracy score to 0.98. We acknowledged the high risk of overfitting in our model and have applied PCA dimensionality reduction yielding an accuracy score of 0.97 with only 25 dimensions.
